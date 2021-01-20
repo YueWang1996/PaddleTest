@@ -23,6 +23,8 @@ import numpy
 import paddle
 import paddle.fluid as fluid
 
+#默认模式：paddle2.0-rc后将默认开启动态图模式；如果需要使用静态图编程模式，可以通过paddle.enable_static()来切换到静态图模式。
+paddle.enable_static()
 
 def parse_args():
     parser = argparse.ArgumentParser("fit_a_line")
